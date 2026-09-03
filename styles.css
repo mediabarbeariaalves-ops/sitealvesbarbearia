@@ -75,32 +75,31 @@ body {
 }
 
 /* --- Fixed Watermark Background with Matte Overlay --- */
-.bg-watermark-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  background-image: url('Marca dagua BG Site.png');
-  background-position: center top;
-  background-repeat: repeat;
-  background-size: 520px auto;
-  opacity: 0.14;
-  filter: invert(1) brightness(1.3) sepia(0.5) hue-rotate(330deg);
-  pointer-events: none;
-}
-
 .bg-matte-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -2;
+  background: radial-gradient(circle at 50% 15%, #241D1A 0%, #0D0C0B 75%);
+  pointer-events: none;
+}
+
+.bg-watermark-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  background: radial-gradient(circle at 50% 20%, rgba(20, 17, 16, 0.72) 0%, rgba(11, 10, 9, 0.93) 85%);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-image: url('marca_dagua.png');
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 420px auto;
+  opacity: 0.35;
+  filter: invert(1) brightness(1.6) sepia(0.6) hue-rotate(330deg);
+  mix-blend-mode: screen;
   pointer-events: none;
 }
 
