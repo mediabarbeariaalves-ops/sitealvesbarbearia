@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (time) message += `⏰ *Horário:* ${time}\n`;
       if (notes) message += `📝 *Observação:* ${notes}\n`;
 
-      // WhatsApp API Link (Barbearia phone number placeholder)
-      const whatsappNumber = '5581999999999';
+      // WhatsApp API Link (Barbearia official phone number)
+      const whatsappNumber = '5581984710683';
       const encodedMessage = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
