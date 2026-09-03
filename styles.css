@@ -82,7 +82,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -2;
-  background: radial-gradient(circle at 50% 15%, #241D1A 0%, #0D0C0B 75%);
+  background: #080808;
   pointer-events: none;
 }
 
@@ -96,10 +96,8 @@ body {
   background-image: url('marca_dagua.png');
   background-position: center top;
   background-repeat: repeat;
-  background-size: 420px auto;
-  opacity: 0.35;
-  filter: invert(1) brightness(1.6) sepia(0.6) hue-rotate(330deg);
-  mix-blend-mode: screen;
+  background-size: 560px auto;
+  opacity: 0.9;
   pointer-events: none;
 }
 
