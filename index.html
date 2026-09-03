@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alves Barbearia | Barbearia Premium & Visagismo Masculino</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Alves Barbearia - Experiência premium de corte de cabelo, barba com toalha quente e visagismo masculino personalizado. Agende seu horário!">
+  <meta name="keywords" content="Alves Barbearia, barbearia premium, corte masculino, barba toalha quente, visagismo masculino, agendamento barbearia">
+  <meta property="og:title" content="Alves Barbearia | Excelência em Cuidado Masculino">
+  <meta property="og:description" content="Design moderno, atendimento exclusivo e visagismo sob medida. Agende sua experiência.">
+  <meta property="og:image" content="foto_fundadora.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Fav Icon Alves.png">
+  <link rel="apple-touch-icon" href="Fav Icon Alves.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Plano de Fundo Fosco Sobreposto à Marca d'Água -->
+  <div class="bg-watermark-fixed"></div>
+  <div class="bg-matte-overlay"></div>
+
+  <!-- Header / Navigation Menu -->
+  <header class="header" id="mainHeader">
+    <div class="container header-container">
+      <a href="#inicio" class="logo-link" title="Alves Barbearia - Início">
+        <img src="Logo Barbearia Alves Texto-02.svg" alt="Alves Barbearia" class="logo-menu-img">
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#precos" class="nav-link">Preços</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#agendamento" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-calendar-check"></i> Agendar Horário
+        </a>
+        
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-tag">
+            Barbearia Premium & Visagismo
+          </div>
+          
+          <h1 class="hero-title">
+            Estilo, Tradição & <br>
+            <span class="text-gradient-gold">Excelência Impecável</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Muito mais que um corte: uma experiência de visagismo masculino sob medida em um ambiente sofisticado com plano de atendimento exclusivo.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#agendamento" class="btn btn-primary">
+              <i class="fa-solid fa-calendar-days"></i> Agendar Seu Horário
+            </a>
+            <a href="#servicos" class="btn btn-outline">
+              <i class="fa-solid fa-scissors"></i> Conhecer Serviços
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+              <span class="highlight-text">Ambiente Climatizado VIP</span>
+            </div>
+            
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-beer-mug-empty"></i>
+              </div>
+              <span class="highlight-text">Cerveja & Café Cortesia</span>
+            </div>
+            
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <span class="highlight-text">Atendimento Sem Atrasos</span>
+            </div>
+            
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <span class="highlight-text">Visagismo Personalizado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="hero-badge-circle">
+              <span>10+</span>
+              <span>Anos de Arte</span>
+            </div>
+            
+            <h3 class="hero-card-title">Alves Barbearia</h3>
+            <p class="hero-card-text">O ponto de encontro para homens de bom gosto que exigem alinhamento impecável.</p>
+            
+            <a href="#sobre" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-arrow-down"></i> Conhecer Nossa História
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section SOBRE (Destaque Fundadora) -->
+  <section class="section-padding section-sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        
+        <!-- Foto da Fundadora à Esquerda (Desktop) -->
+        <div class="founder-photo-wrapper">
+          <div class="founder-photo-frame">
+            <img src="foto_fundadora.png" alt="Fundadora da Alves Barbearia" class="founder-photo-img">
+            
+            <div class="founder-floating-badge">
+              <div class="badge-icon-wrap">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <div class="badge-text-title">+10 Anos de Excelência</div>
+                <div class="badge-text-sub">Mestre em Visagismo & Cuidado Masculino</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descrição da Fundadora à Direita com Logotipo no Topo do Texto -->
+        <div class="sobre-content">
+          <!-- Logotipo da Barbearia exatamente no topo do texto de apresentação -->
+          <img src="Logotipo Alves Barbearia .svg" alt="Logotipo Alves Barbearia" class="founder-logo-top">
+
+          <div class="badge-tag">A Fundadora & Visão</div>
+          
+          <h2 class="sobre-title">
+            Transformando o Cuidado Masculino em <span class="text-gradient-gold">Arte e Experiência</span>
+          </h2>
+          
+          <p class="sobre-description">
+            Fundada com a missão de redefinir o conceito de barbearia tradicional, a <strong>Alves Barbearia</strong> nasceu da paixão em unir técnicas clássicas de navalha a conceitos modernos de visagismo masculino.
+          </p>
+
+          <p class="sobre-description">
+            Sob a liderança da nossa fundadora, cada atendimento é planejado individualmente. Analisamos o formato do rosto, tipo de cabelo, estilo de vida e personalidade para entregar um visual único que eleva a confiança de nossos clientes.
+          </p>
+
+          <div class="sobre-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-crown"></i></div>
+              <div class="pillar-title">Atendimento VIP</div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <div class="pillar-title">Visagismo Único</div>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-gem"></i></div>
+              <div class="pillar-title">Produtos Premium</div>
+            </div>
+          </div>
+
+          <div class="quote-block">
+            "Um grande corte não transforma apenas a aparência de um homem; ele renova sua postura e autoimagem perante o mundo."
+            <span class="quote-author">— Fundadora Alves Barbearia</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Serviços -->
+  <section class="section-padding" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Nossos Serviços</div>
+        <h2 class="section-title">Rituais de Estilo & <span class="text-gradient-gold">Cuidado</span></h2>
+        <p class="section-subtitle">Técnicas apuradas, cosméticos selecionados e atendimento de alta precisão.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Serviço 1 -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3 class="service-name">Corte Moderno & Visagismo</h3>
+            <p class="service-desc">Lavagem especial, diagnóstico de formato facial, corte de alta precisão e finalização com pomadas importadas.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 65,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 45 min</span>
+          </div>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+            <h3 class="service-name">Barba de Respeito</h3>
+            <p class="service-desc">Ritual completo com toalha quente, óleos essenciais hidratantes, alinhamento na navalha e pós-barba suavizante.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 55,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 40 min</span>
+          </div>
+        </div>
+
+        <!-- Serviço 3 (Destaque Combo) -->
+        <div class="service-card featured">
+          <span class="service-featured-badge">Mais Pedido</span>
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-star"></i></div>
+            <h3 class="service-name">Combo Alves (Corte + Barba)</h3>
+            <p class="service-desc">A experiência completa de transformação: corte com visagismo + barba ritual toalha quente + sobrancelha de cortesia.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 105,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 1h 15m</span>
+          </div>
+        </div>
+
+        <!-- Serviço 4 -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="service-name">Selagem & Alisamento</h3>
+            <p class="service-desc">Tratamento para controle de volume, alinhamento dos fios e brilho natural sem danificar a estrutura do cabelo.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 90,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 1h</span>
+          </div>
+        </div>
+
+        <!-- Serviço 5 -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3 class="service-name">Design de Sobrancelha</h3>
+            <p class="service-desc">Limpeza e alinhamento discreto na navalha ou pinça mantendo a masculinidade e expressão natural.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 25,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 15 min</span>
+          </div>
+        </div>
+
+        <!-- Serviço 6 -->
+        <div class="service-card">
+          <div>
+            <div class="service-icon"><i class="fa-solid fa-glass-cheers"></i></div>
+            <h3 class="service-name">Dia do Noivo VIP</h3>
+            <p class="service-desc">Atendimento exclusivo com direito a bebidas premium, degustação, penteados e relaxamento completo para a data especial.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-price">R$ 280,00</span>
+            <span class="service-time"><i class="fa-regular fa-clock"></i> 2h 30m</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Preços -->
+  <section class="section-padding section-precos" id="precos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Tabela de Preços</div>
+        <h2 class="section-title">Menu de <span class="text-gradient-gold">Experiências</span></h2>
+        <p class="section-subtitle">Transparência e valores justos para o seu ritual constante de cuidado.</p>
+      </div>
+
+      <div class="pricing-table-card">
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Corte Masculino Tradicional / Moderno</div>
+            <div class="pricing-item-desc">Lavação com shampoo mentolado + finalização</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 65,00</div>
+        </div>
+
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Barba Terapia com Toalha Quente</div>
+            <div class="pricing-item-desc">Ritual completo de hidratação e esfoliação</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 55,00</div>
+        </div>
+
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Combo Especial Alves (Corte + Barba)</div>
+            <div class="pricing-item-desc">Corte + Barba Terapia + Sobrancelha inclusa</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 105,00</div>
+        </div>
+
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Corte Infantil (Até 10 anos)</div>
+            <div class="pricing-item-desc">Atendimento atencioso com corte divertido</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 50,00</div>
+        </div>
+
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Camuflagem de Fios Grisolhos / Barba</div>
+            <div class="pricing-item-desc">Pigmentação natural para rejuvenescimento leve</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 45,00</div>
+        </div>
+
+        <div class="pricing-row">
+          <div class="pricing-info">
+            <div class="pricing-item-title">Hidratação Profunda de Cabelo & Barba</div>
+            <div class="pricing-item-desc">Recuperação do brilho e maciez dos fios</div>
+          </div>
+          <div class="pricing-dots"></div>
+          <div class="pricing-item-price">R$ 40,00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Depoimentos -->
+  <section class="section-padding" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Avaliações</div>
+        <h2 class="section-title">O Que Dizem <span class="text-gradient-gold">Nossos Clientes</span></h2>
+        <p class="section-subtitle">A satisfação de quem vive a experiência Alves Barbearia diariamente.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★ ★ ★ ★ ★</div>
+            <p class="review-text">"Ambiente incrível e atendimento impecável! A consultoria de visagismo da fundadora mudou totalmente o estilo do meu corte. Recomendo de olhos fechados!"</p>
+          </div>
+          <div class="review-author">
+            <div class="avatar-circle">M</div>
+            <div>
+              <div class="author-name">Matheus Oliveira</div>
+              <div class="author-tag">Cliente há 3 anos</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★ ★ ★ ★ ★</div>
+            <p class="review-text">"A barbeaterapia com toalha quente é sensacional. Saio da Alves renovado e pronto para a semana. Cerveja gelada e ambiente muito agradável."</p>
+          </div>
+          <div class="review-author">
+            <div class="avatar-circle">R</div>
+            <div>
+              <div class="author-name">Rodrigo Silveira</div>
+              <div class="author-tag">Cliente VIP</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★ ★ ★ ★ ★</div>
+            <p class="review-text">"Pontualidade exemplar! Agendei pelo WhatsApp e fui atendido no exato minuto. O acabamento da barba é o melhor da cidade."</p>
+          </div>
+          <div class="review-author">
+            <div class="avatar-circle">G</div>
+            <div>
+              <div class="author-name">Gabriel Mendes</div>
+              <div class="author-tag">Cliente Mensalista</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Agendamento & Contato -->
+  <section class="section-padding" id="contato">
+    <div class="container">
+      <div class="contact-grid" id="agendamento">
+        
+        <!-- Informações de Contato -->
+        <div class="contact-info-card">
+          <div class="badge-tag">Agendamento Fácil</div>
+          <h2 class="contact-title">Venha Viver a <span class="text-gradient-gold">Experiência Alves</span></h2>
+          <p style="margin-bottom: 30px; color: var(--text-muted);">
+            Preencha o formulário ao lado para agendar seu horário diretamente via WhatsApp ou entre em contato pelos canais abaixo.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-detail-title">Endereço</div>
+              <div class="contact-detail-text">Av. Principal de Igarassu, 1200 - Centro</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-detail-title">WhatsApp / Telefone</div>
+              <div class="contact-detail-text">(81) 99999-9999</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact-detail-title">Horário de Funcionamento</div>
+              <div class="contact-detail-text">Terça a Sábado: 09h às 20h<br>Domingo e Segunda: Fechado</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-wifi"></i></div>
+            <div>
+              <div class="contact-detail-title">Comodidades</div>
+              <div class="contact-detail-text">Wi-Fi High Speed, Lounge Bar & Estacionamento</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de Agendamento Inteligente -->
+        <div class="booking-form-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-gold);">Agendar Horário Rápido</h3>
+          
+          <form id="bookingForm">
+            <div class="form-group">
+              <label class="form-label" for="clientName">Seu Nome Completo *</label>
+              <input type="text" id="clientName" class="form-input" placeholder="Ex: João da Silva" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientPhone">Seu Telefone (WhatsApp) *</label>
+              <input type="tel" id="clientPhone" class="form-input" placeholder="Ex: (81) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientService">Escolha o Serviço *</label>
+              <select id="clientService" class="form-select" required>
+                <option value="" disabled selected>Selecione um serviço...</option>
+                <option value="Corte Moderno & Visagismo (R$ 65,00)">Corte Moderno & Visagismo (R$ 65,00)</option>
+                <option value="Barba de Respeito (R$ 55,00)">Barba de Respeito (R$ 55,00)</option>
+                <option value="Combo Alves - Corte + Barba (R$ 105,00)">Combo Alves - Corte + Barba (R$ 105,00)</option>
+                <option value="Selagem Masculina (R$ 90,00)">Selagem Masculina (R$ 90,00)</option>
+                <option value="Design de Sobrancelha (R$ 25,00)">Design de Sobrancelha (R$ 25,00)</option>
+                <option value="Dia do Noivo VIP (R$ 280,00)">Dia do Noivo VIP (R$ 280,00)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="clientDate">Data Preferencial</label>
+                <input type="date" id="clientDate" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientTime">Horário Preferencial</label>
+                <input type="time" id="clientTime" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientNotes">Observação / Preferência de Barbeiro</label>
+              <textarea id="clientNotes" class="form-textarea" rows="3" placeholder="Ex: Prefiro atendimento com a fundadora..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-brands fa-whatsapp"></i> Confirmar Agendamento via WhatsApp
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="Logo Barbearia Alves Texto-02.svg" alt="Alves Barbearia" class="footer-logo-img">
+          <p class="footer-text">
+            Sua barbearia de referência em visagismo, corte masculino e barba terapia. Estilo clássico com toque contemporâneo.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre a Fundadora</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#precos">Tabela de Preços</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="#agendamento">Agendar Horário</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#contato">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Redes Sociais</h4>
+          <div style="display: flex; gap: 14px; font-size: 1.4rem;">
+            <a href="#" style="color: var(--accent-gold);"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: var(--accent-gold);"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" style="color: var(--accent-gold);"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Alves Barbearia. Todos os direitos reservados.</div>
+        <div>Design Premium & Visagismo Masculino</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
