@@ -94,10 +94,10 @@ body {
   height: 100vh;
   z-index: -1;
   background-image: url('marca_dagua.png');
-  background-position: center top;
-  background-repeat: repeat;
-  background-size: 560px auto;
-  opacity: 0.9;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
   pointer-events: none;
 }
 
