@@ -437,6 +437,12 @@ img {
   flex-shrink: 0;
 }
 
+.highlight-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 .highlight-text {
   font-size: 0.9rem;
   font-weight: 600;
