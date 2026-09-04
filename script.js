@@ -80,7 +80,25 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Format WhatsApp Message
+      // --- 1. Enviar Dados em Segundo Plano para o Google Forms ---
+      const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfZzqrsqsIbCXAkRcUYfJrfrcNmGOQab_xb3GIwKOIGLX0FpA/formResponse';
+      const formData = new URLSearchParams();
+      formData.append('entry.2135938312', name);
+      formData.append('entry.997968800', phone);
+      formData.append('entry.408435830', service);
+      if (date) formData.append('entry.1207688596', date);
+      if (time) formData.append('entry.795228329', time);
+
+      fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: formData.toString()
+      }).catch(err => console.log('Integração Google Forms:', err));
+
+      // --- 2. Format WhatsApp Message & Open ---
       let message = `Olá, Alves Barbearia! Gostaria de agendar um horário:\n\n`;
       message += `👤 *Nome:* ${name}\n`;
       message += `📱 *Telefone:* ${phone}\n`;
