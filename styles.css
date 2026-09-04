@@ -3,7 +3,15 @@
    Dark Matte Premium Aesthetic with Terracotta & Gold Accents
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Fallback local font definition for Caslonian Std L Bold */
+@font-face {
+  font-family: 'Caslonian Std L Bold';
+  src: local('Caslonian Std L Bold'), local('CaslonianStdL-Bold'), local('Caslonian Std Bold'), local('CaslonianStd');
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* --- Root CSS Variables --- */
 :root {
@@ -31,6 +39,7 @@
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-caslonian: 'Caslonian Std L Bold', 'Caslonian Std', 'Libre Caslon Display', 'Big Caslon', 'Book Antiqua', Georgia, serif;
 
   /* Layout & Spacing */
   --container-width: 1240px;
@@ -373,10 +382,12 @@ img {
 }
 
 .hero-title {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 800;
+  font-family: var(--font-caslonian);
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-weight: 700;
   margin-bottom: 24px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
 }
 
 .hero-subtitle {
