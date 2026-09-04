@@ -449,56 +449,31 @@ img {
   color: var(--text-main);
 }
 
-/* Hero Visual Box Right Side */
-.hero-visual-card {
+/* Hero Visual Box Right Side - Logotipo Alves Barbearia */
+.hero-logo-card {
   position: relative;
   border-radius: var(--radius-lg);
-  padding: 40px;
-  background: linear-gradient(145deg, rgba(30, 25, 23, 0.85) 0%, rgba(16, 14, 13, 0.92) 100%);
+  padding: 50px 40px;
+  background: linear-gradient(145deg, rgba(30, 25, 23, 0.75) 0%, rgba(16, 14, 13, 0.88) 100%);
   border: 1px solid var(--border-glass);
   box-shadow: var(--shadow-lg), var(--shadow-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.hero-badge-circle {
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 24px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--primary-terracotta) 0%, #52271C 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  border: 2px solid var(--accent-gold);
-  box-shadow: 0 0 30px var(--primary-terracotta-glow);
+.hero-main-logo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 25px rgba(161, 86, 65, 0.3));
+  transition: transform var(--transition-smooth), filter var(--transition-smooth);
 }
 
-.hero-badge-circle span:nth-child(1) {
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.hero-badge-circle span:nth-child(2) {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.hero-card-title {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-  color: var(--accent-gold);
-}
-
-.hero-card-text {
-  font-size: 0.95rem;
-  margin-bottom: 24px;
-  color: var(--text-muted);
+.hero-logo-card:hover .hero-main-logo {
+  transform: scale(1.04);
+  filter: drop-shadow(0 15px 32px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 35px rgba(255, 248, 173, 0.4));
 }
 
 /* --- SECTION SOBRE (FOUNDER FEATURE SECTION) --- */
@@ -617,32 +592,66 @@ img {
   line-height: 1.75;
 }
 
-.sobre-pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 28px 0;
+/* --- Partners Marquee Carousel Section --- */
+.partners-carousel-section {
   width: 100%;
-}
-
-.pillar-card {
-  padding: 18px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-md);
+  margin-top: 50px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border-glass);
   text-align: center;
 }
 
-.pillar-icon {
-  font-size: 1.5rem;
-  color: var(--primary-terracotta);
-  margin-bottom: 8px;
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
-.pillar-title {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--text-main);
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 35px));
+  }
+}
+
+.partner-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  cursor: pointer;
+}
+
+.partner-logo-item img {
+  height: 52px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  opacity: 0.45;
+  filter: grayscale(1) brightness(1.8);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.partner-logo-item:hover img {
+  opacity: 1;
+  filter: grayscale(0) brightness(2.2) drop-shadow(0 0 20px rgba(255, 248, 173, 0.9));
+  transform: scale(1.12);
 }
 
 .quote-block {
