@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const service = document.getElementById('clientService').value;
       const date = document.getElementById('clientDate').value;
       const time = document.getElementById('clientTime').value;
-      const notes = document.getElementById('clientNotes').value.trim();
 
       if (!name || !phone || !service) {
         alert('Por favor, preencha nome, telefone e o serviço desejado.');
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
       message += `✂️ *Serviço:* ${service}\n`;
       if (date) message += `📅 *Data:* ${date}\n`;
       if (time) message += `⏰ *Horário:* ${time}\n`;
-      if (notes) message += `📝 *Observação:* ${notes}\n`;
 
       // WhatsApp API Link (Barbearia official phone number)
       const whatsappNumber = '5581984710683';
